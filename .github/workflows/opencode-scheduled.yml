@@ -22,7 +22,7 @@ jobs:
         env:
           FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
         with:
-          model: fireworks/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
+          model: fireworks-ai/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
           prompt: |
             Context & Links:
             - https://revolut.atlassian.net/jira/core/projects/DRPRM/list?jql=project%20%3D%20DRPRM%20ORDER%20BY%20cf%5B10011%5D%20ASC
