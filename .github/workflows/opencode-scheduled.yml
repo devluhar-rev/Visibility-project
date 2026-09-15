@@ -25,6 +25,7 @@ jobs:
           model: fireworks-ai/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
           prompt: |
             Context & Links:
+            - Target Confluence Folder: https://revolut.atlassian.net/wiki/spaces/PB1/folder/6688671579?atlOrigin=eyJpIjoiYTQ5YTMyYmQ1NmE5NGQ5Y2EzOTBlOWQ5MGEzMjcxNjMiLCJwIjoiYyJ9
             - https://revolut.atlassian.net/jira/core/projects/DRPRM/list?jql=project%20%3D%20DRPRM%20ORDER%20BY%20cf%5B10011%5D%20ASC
             - https://revolut.atlassian.net/jira/core/projects/DRCARDP/list?jql=project%20%3D%20DRCARDP%20ORDER%20BY%20cf%5B10011%5D%20ASC
             - https://revolut.atlassian.net/jira/core/projects/DRCOREP/list?jql=project%20%3D%20DRCOREP%20ORDER%20BY%20cf%5B10011%5D%20ASC
@@ -33,12 +34,14 @@ jobs:
             - https://revolut.atlassian.net/jira/software/projects/PRIVBANK/list?jql=project%20%3D%20PRIVBANK%20ORDER%20BY%20cf%5B10011%5D%20ASC
             
             Task 1: Extraction & Condensation
-            1. Scan the provided Jira boards and extract ALL subprojects and epics scheduled to finish at the end of this month (September 2026).
+            1. Scan the provided Jira boards and extract ALL subprojects and epics scheduled to finish at the end of this current month (September 2026).
             2. Pull the associated NIAP ticket keys for each item where applicable.
             3. Retrieve the descriptions from both the epics and their associated NIAP tickets, then simplify and condense them into exactly 2 to 3 bullet points per item.
             
-            Task 2: Confluence Table Output with Team Tags
-            Present all the extracted data as a Confluence-compatible Markdown table. 
+            Task 2: Confluence Page Creation & Table Output
+            1. Create a new Confluence page directly inside the "Target Confluence Folder" linked in the context above.
+            2. Title the page after the current month and year (e.g., "September 2026").
+            3. On this newly created page, present all the extracted data as a formatted table. 
             
             Analyze the context of each item's description to determine which departments or teams are impacted (e.g., Sales, Private Banking, Engineering, Compliance, Marketing). Add these as filterable tags in a dedicated column so specific teams can easily find what applies to them.
             
