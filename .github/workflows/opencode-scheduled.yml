@@ -22,7 +22,7 @@ jobs:
         env:
           FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
         with:
-          model: fireworks-ai/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
+          model: revolut-dsv4/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
           prompt: |
             Context & Links:
             - Target Confluence Folder: https://revolut.atlassian.net/wiki/spaces/PB1/folder/6688671579?atlOrigin=eyJpIjoiYTQ5YTMyYmQ1NmE5NGQ5Y2EzOTBlOWQ5MGEzMjcxNjMiLCJwIjoiYyJ9

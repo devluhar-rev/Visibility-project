@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "revolut-dsv4": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Revolut DSv4 F",
+      "options": {
+        "baseURL": "https://api.fireworks.ai/inference/v1",
+        "apiKey": "{env:FIREWORKS_API_KEY}"
+      },
+      "models": {
+        "accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context": {}
+      }
+    }
+  }
+}
