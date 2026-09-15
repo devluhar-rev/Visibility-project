@@ -24,4 +24,23 @@ jobs:
         with:
           model: fireworks/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
           prompt: |
-            >>> PASTE YOUR MONTHLY TASK HERE <<<
+            Context & Links:
+            - https://revolut.atlassian.net/jira/core/projects/DRPRM/list?jql=project%20%3D%20DRPRM%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            - https://revolut.atlassian.net/jira/core/projects/DRCARDP/list?jql=project%20%3D%20DRCARDP%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            - https://revolut.atlassian.net/jira/core/projects/DRCOREP/list?jql=project%20%3D%20DRCOREP%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            - https://revolut.atlassian.net/jira/core/projects/DRWNT/list?jql=project%20%3D%20DRWNT%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            - https://revolut.atlassian.net/jira/core/projects/DRSAL/list?jql=project%20%3D%20DRSAL%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            - https://revolut.atlassian.net/jira/software/projects/PRIVBANK/list?jql=project%20%3D%20PRIVBANK%20ORDER%20BY%20cf%5B10011%5D%20ASC
+            
+            Task 1: Extraction & Condensation
+            1. Scan the provided Jira boards and extract ALL subprojects and epics scheduled to finish at the end of this month (September 2026).
+            2. Pull the associated NIAP ticket keys for each item where applicable.
+            3. Retrieve the descriptions from both the epics and their associated NIAP tickets, then simplify and condense them into exactly 2 to 3 bullet points per item.
+            
+            Task 2: Confluence Table Output with Team Tags
+            Present all the extracted data as a Confluence-compatible Markdown table. 
+            
+            Analyze the context of each item's description to determine which departments or teams are impacted (e.g., Sales, Private Banking, Engineering, Compliance, Marketing). Add these as filterable tags in a dedicated column so specific teams can easily find what applies to them.
+            
+            The table must include all items extracted in Task 1 and use the following columns:
+            | Project / Epic (Hyperlinked Jira URL) | Completion Date | NIAP Ticket Key | Summary (2-3 Bullet Points) | Relevant Teams (Tags) |>> PASTE YOUR MONTHLY TASK HERE <<<
