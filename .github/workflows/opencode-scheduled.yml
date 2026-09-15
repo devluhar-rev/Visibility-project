@@ -1,0 +1,27 @@
+name: Scheduled OpenCode Task
+on:
+  schedule:
+    - cron: "0 9 1 * *"    # Monthly: 09:00 UTC on the 1st
+  workflow_dispatch: {}    # Manual trigger from the Actions tab
+jobs:
+  opencode:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Run OpenCode
+        uses: anomalyco/opencode/github@latest
+        env:
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+        with:
+          model: fireworks/accounts/revolut-non-coding/deployments/dsv4-non-b200-250k-context
+          prompt: |
+            >>> PASTE YOUR MONTHLY TASK HERE <<<
