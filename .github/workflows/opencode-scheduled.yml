@@ -43,4 +43,4 @@ jobs:
             Analyze the context of each item's description to determine which departments or teams are impacted (e.g., Sales, Private Banking, Engineering, Compliance, Marketing). Add these as filterable tags in a dedicated column so specific teams can easily find what applies to them.
             
             The table must include all items extracted in Task 1 and use the following columns:
-            | Project / Epic (Hyperlinked Jira URL) | Completion Date | NIAP Ticket Key | Summary (2-3 Bullet Points) | Relevant Teams (Tags) |>> PASTE YOUR MONTHLY TASK HERE <<<
+            | Project / Epic (Hyperlinked Jira URL) | Completion Date | NIAP Ticket Key | Summary (2-3 Bullet Points) | Relevant Teams (Tags) |
